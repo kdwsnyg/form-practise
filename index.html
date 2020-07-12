@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sign-up, #sign-in {
+            width: 450px;
+            margin: 50px auto;
+            padding: 30px 0;
+            background-color: #545454;
+            text-align: center;
+        }
+
+        .title {
+            margin: 30px 0 20px;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        input, button {
+            outline: none;
+            font-size: 17px;
+        }
+
+        form div {
+            margin-bottom: 30px;
+        }
+
+        .phonenumber, .email-address, .password {
+            width: 70%;
+            height: 40px;
+        }
+
+        .verification {
+            width: 49%;
+            height: 40px;
+        }
+
+        button {
+            background-color: #FD7867;
+            border: none;
+            width: 21%;
+            height: 42px;
+            color: #fff;
+        }
+
+        input[type='submit'] {
+            background-color: #FD7867;
+            border: none;
+            width: 80%;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="sign-up">
+        <div class="logo">
+            <img src="logo.png" alt="开黑logo">
+        </div>
+        <div class="title">注册</div>
+        <form action="" method="POST">
+            <div>
+                <input class="phonenumber" type="text" name="phonenumber" placeholder="手机号" maxlength="11" required />
+            </div>
+            <div>
+                <input class="verification" type="text" name="verification" placeholder="验证码" maxlength="6" required />
+                <button type="button">发送验证码</button>
+            </div>
+            <div>
+                <input type="submit" value="快速注册" name="sign-up-info" />
+            </div>
+        </form>
+    </div>
+    <div id="sign-in">
+        <div class="logo">
+            <img src="logo.png" alt="开黑logo">
+        </div>
+        <div class="title">密码登录</div>
+        <form action="" method="POST">
+            <div>
+                <input class="email-address" type="email" name="email-adress" placeholder="邮箱" required />
+            </div>
+            <div>
+                <input class="password" type="password" name="password" placeholder="密码" required />
+            </div>
+            <div>
+                <input type="submit" value="登录" name="sign-in-info" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
